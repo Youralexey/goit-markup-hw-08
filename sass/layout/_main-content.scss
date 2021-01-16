@@ -29,6 +29,7 @@
 }
 .descriptions {
   margin-top: 10px;
+  min-height: 75px;
   font-family: Roboto, sans-serif;
   font-weight: 400px;
   font-size: 14px;
@@ -46,7 +47,7 @@
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
@@ -56,6 +57,23 @@
   }
   .icon-wrapper {
     width: 354px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    flex-wrap: nowrap;
+    width: 1170px;
+    margin: 0;
+    padding: 94px 0;
+  }
+  .advantages-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  .icon-wrapper {
+    width: 270px;
+    margin-bottom: 30px;
   }
 }
 
