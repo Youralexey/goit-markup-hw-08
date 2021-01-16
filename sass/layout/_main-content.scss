@@ -65,12 +65,14 @@
   .advantages {
     flex-wrap: nowrap;
     width: 1170px;
-    margin: 0;
-    padding: 94px 0;
+    padding: 94px -15px;
   }
-  .advantages-list:not(:last-child) {
-    margin-right: 30px;
+  .advantages-list {
+    width: calc((100% - 8 * 15px) / 4);
   }
+  // .advantages-list:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   .icon-wrapper {
     width: 270px;
     margin-bottom: 30px;
