@@ -303,6 +303,7 @@ body {
 /* TEAM */
 .team {
   background-color: #f5f4fa;
+  padding-bottom: 60px;
 }
 
 .section-title {
@@ -318,7 +319,6 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 
 .team-name-title {
@@ -379,7 +379,90 @@ body {
   fill: currentColor;
 }
 
-/*END clients-section */
+@media screen and (max-width: 767px) {
+  .descriptions-list:not(:first-child) {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .descriptions-list {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 94px;
+  }
+  .descriptions-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover, .clients-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon {
+  fill: currentColor;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-icon:hover, .clients-icon:focus {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .clients-items {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-items {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+  .clients-list {
+    margin: -15px;
+  }
+}
+
+/*END clients section */
 /*MODAL BUTTONS*/
 .modal-btn {
   cursor: pointer;
