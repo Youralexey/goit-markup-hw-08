@@ -419,7 +419,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -477,7 +477,6 @@ body {
   }
 }
 
-/*END clients section */
 /*MODAL BUTTONS*/
 .modal-btn {
   cursor: pointer;
