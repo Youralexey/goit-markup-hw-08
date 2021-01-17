@@ -389,7 +389,7 @@ body {
   .team-box {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    margin: -15px;
   }
   .descriptions-list {
     width: calc((100% - 4 * 15px) / 2);
@@ -459,6 +459,21 @@ body {
   }
   .clients-list {
     margin: -15px;
+  }
+  .clients-link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    justify-content: space-between;
+    padding-bottom: 94px;
+    margin-top: 20px;
+  }
+  .clients-link {
+    width: 170px;
+    height: 90px;
   }
 }
 
