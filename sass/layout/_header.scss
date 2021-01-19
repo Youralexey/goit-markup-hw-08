@@ -101,7 +101,7 @@
 
 .address {
   margin-left: auto;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -121,6 +121,9 @@
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.main-mail:hover .main-mail_icon {
+  fill: currentColor;
+}
 
 .main-tel {
   content: "";
@@ -133,6 +136,9 @@
 .main-tel:focus {
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-tel:hover .main-tel_icon {
+  fill: currentColor;
 }
 .address_list-item:not(:last-child) {
   padding-bottom: 16px;
@@ -173,6 +179,7 @@
     display: none;
   }
   .header-list {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -207,13 +214,16 @@
     letter-spacing: 0.03em;
   }
 
-  .address {
-    left: 0;
-    right: 0;
+  .address_list-item:not(:last-child) {
+    padding-bottom: 8px;
   }
+  .address_list {
+    padding-top: 21px;
+  }
+
   .navigation_list-link {
-    padding-top: 0;
-    padding-bottom: 0;
+    display: block;
+    padding-bottom: 32px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -222,7 +232,71 @@
     letter-spacing: 0.02em;
   }
   .current-nav-link::after {
+    position: absolute;
     bottom: 0;
+  }
+  .main-mail {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+  }
+  .main-tel {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    margin-left: -17px;
+  }
+  .main-tel_icon {
+    width: 14px;
+    height: 10px;
+  }
+  .main-tel_icon {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+  .main-mail_icon {
+    width: 16px;
+    height: 12px;
+  }
+  .main-tel_icon {
+    width: 10px;
+    height: 16px;
+  }
+  .main-tel {
+    margin-left: 30px;
+  }
+  .main-mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .main-tel {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .address_list {
+    display: flex;
+    padding-top: 0;
+  }
+  .main-mail:hover,
+  .main-mail:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .main-mail:hover .main-mail_icon {
+    fill: currentColor;
   }
 }
 // .header {
