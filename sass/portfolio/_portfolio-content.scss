@@ -36,11 +36,11 @@
 }
 .portfolio-cards-list {
   display: block;
-  width: 100%;
+  margin: -15px;
   margin-bottom: 60px;
 }
 .portfolio-list {
-  width: 100%;
+  margin-bottom: 30px;
 
   &:hover,
   &:focus {
@@ -59,6 +59,9 @@
 }
 .portfolio-list:not(:last-child) {
   margin-bottom: 30px;
+}
+.portfolio-list {
+  border: 1px solid #eeeeee;
 }
 
 .position-img {
@@ -89,13 +92,10 @@
 }
 
 .portfolio-border {
-  border-right: 1px solid rgba(238, 238, 238, 1);
-  border-bottom: 1px solid rgba(238, 238, 238, 1);
-  border-left: 1px solid rgba(238, 238, 238, 1);
-
+  max-height: 151px;
   .portfolio-title {
-    padding-top: 20px;
-    padding-bottom: 4px;
+    margin-top: 20px;
+    margin-bottom: 4px;
     font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -104,7 +104,6 @@
     color: var(--primary-text-color);
   }
   .portfolio-description {
-    padding-bottom: 20px;
     font-family: Roboto, sans-serif;
     font-weight: normal;
     font-size: 16px;
@@ -130,10 +129,11 @@
   }
   .portfolio-list {
     width: calc((100% - 4 * 15px) / 2);
+
     margin: 15px;
   }
   .portfolio-list:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
   .portfolio-border {
     padding: 20px 24px;
