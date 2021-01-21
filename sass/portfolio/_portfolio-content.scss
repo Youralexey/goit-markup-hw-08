@@ -41,12 +41,16 @@
 }
 .portfolio-list {
   width: 100%;
-  .portfolio-list:hover,
-  .portfolio-list:focus {
+
+  &:hover,
+  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   .portfolio-list .photo-transition {
+    display: block;
+  }
+  .photo-transition {
     display: block;
   }
   .photo-transition:hover .position-card {
@@ -134,7 +138,14 @@
   .portfolio-border {
     padding: 20px 24px;
   }
-  .portfolio-title {
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+  .section {
+    padding-bottom: 18px;
   }
 }
 // .button-section {
