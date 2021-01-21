@@ -6,6 +6,7 @@
 }
 .header-list {
   display: none;
+  z-index: 5;
 
   position: absolute;
   top: 100%;
@@ -45,8 +46,6 @@
   margin-bottom: 40px;
 }
 .navigation_list-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -102,7 +101,7 @@
 
 .address {
   margin-left: auto;
-  margin-bottom: 60px;
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -174,7 +173,12 @@
 .main-tel:focus .main-tel_icon {
   fill: currentColor;
 }
-
+@media screen and (max-width: 767px) {
+  .header-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
@@ -223,6 +227,8 @@
   }
 
   .navigation_list-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: block;
     padding-bottom: 32px;
     font-family: Roboto;

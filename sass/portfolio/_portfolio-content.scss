@@ -1,4 +1,8 @@
 // /*BUTTON FILTER*/
+img {
+  width: 100%;
+}
+
 .section {
   padding-top: 45px;
   padding-bottom: 60px;
@@ -94,7 +98,6 @@
 .portfolio-border {
   max-height: 151px;
   .portfolio-title {
-    margin-top: 20px;
     margin-bottom: 4px;
     font-family: Roboto, sans-serif;
     font-weight: 700;
