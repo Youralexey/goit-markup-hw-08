@@ -478,9 +478,17 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desk.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
     background-size: 1600px 600px;
     margin: 0 auto;
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desk.jpg");
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 600px;
   }
   .hero-title {
     font-size: 44px;
@@ -1193,6 +1201,7 @@ body {
   align-items: center;
   margin-top: 20px;
   margin-bottom: 31px;
+  padding-left: 12px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -1227,7 +1236,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    min-width: 528px;
     height: 581px;
   }
   .modal-title {
@@ -1397,7 +1406,8 @@ img {
     margin: 15px;
   }
   .section {
-    padding-bottom: 18px;
+    padding-bottom: 50px;
+    padding-top: 94px;
   }
 }
 /*# sourceMappingURL=main.css.map */

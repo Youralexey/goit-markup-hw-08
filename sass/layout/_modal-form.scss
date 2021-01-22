@@ -191,6 +191,7 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 31px;
+  padding-left: 12px;
 
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -226,7 +227,7 @@
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    min-width: 528px;
     height: 581px;
   }
   .modal-title {
