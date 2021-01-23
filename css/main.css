@@ -485,10 +485,7 @@ body {
     margin: 0 auto;
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desk.jpg");
-    margin: 0 auto;
-    max-width: 1600px;
-    height: 600px;
+    background-image: url("../images/hero-desk.jpg");
   }
   .hero-title {
     font-size: 44px;
